@@ -2,8 +2,12 @@ package com.javaex.dao;
 
 import java.sql.*;
 import java.util.*;
+
+import org.springframework.stereotype.Repository;
+
 import com.javaex.vo.*;
 
+@Repository //Autowired에 연결
 public class PhoneDao {
 	private Connection conn = null;
 	private PreparedStatement pstmt = null;
